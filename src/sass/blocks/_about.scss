@@ -20,6 +20,9 @@
         padding-left: 12px;
         @include before-circle;
     }
+    &__subtitle {
+        margin-top: 6px;
+    }
     .divider {
         margin: 0;
     }
