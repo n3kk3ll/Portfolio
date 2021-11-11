@@ -1,0 +1,25 @@
+.works {
+    padding-top: 120px;
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template: repeat(2, 280px) / repeat(4, 280px);
+        grid-auto-rows: 280px;
+        gap: 5px;
+        .vertical {
+            grid-area: 1/4/3/5;
+        }
+        .horizontal {
+            grid-area: 2/2/3/4;
+        }
+    }
+    &__item {
+        transition: all 0.6s;
+        img{
+            width: 100%;
+        }
+        &:hover {
+            filter: grayscale(75%);
+        }
+    }
+}
