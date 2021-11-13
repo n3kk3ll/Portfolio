@@ -1,0 +1,214 @@
+@media (max-width: 1439px) {
+    .sidepanel {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 400px 520px;
+            column-gap: 50px;
+        }
+        &__skills {
+            column-gap: 20px;
+            grid-template-columns: repeat(2, 250px);
+            &-item {
+                grid-template-columns: 40px 195px;
+                column-gap: 15px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 40px 30px 0;
+            column-gap: 80px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-between;
+        }
+        &__rating {
+            grid-template-columns: repeat(auto-fit, 350px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .title {
+        &__fz36 {
+            font-size: 30px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 300px 380px;
+            column-gap: 40px;
+        }
+        &__skills {
+            grid-template-columns: 380px;
+            grid-auto-rows: minmax(115px, auto);
+            &-item {
+                grid-template-columns: 40px 320px;
+                column-gap: 20px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, 315px);
+            column-gap: 30px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            padding: 0 20px;
+        }
+        &__rating {
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, 320px);
+            &-item{
+                &-line {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .title {
+        &__fz48 {
+            font-size: 30px;
+        }
+    }
+    .promo {
+        background-position-x: 25%;
+        &__title {
+            line-height: 39px;
+            width: 300px;
+        }
+    }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: 400px auto auto / 1fr;
+        }
+        &__img {
+            grid-row: unset;
+            img {
+                object-position: 50% 25%;
+            }
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+            &-item {
+                grid-template-columns: 40px 200px;
+                column-gap: 20px;
+            }
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            gap: 40px 60px;
+        }
+    }
+    .skills {
+        padding-top: 40px;
+        &__wrapper {
+            padding: 0;
+            justify-content: center;
+            row-gap: 40px;
+        }
+        &__rating {
+            margin-top: 40px;
+            justify-content: center;
+            gap: 40px 0;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .menu {
+        &__social {
+            bottom: 30px;
+        }
+    }
+    .title {
+        &__fz48 {
+            font-size: 26px;
+        }
+        &__fz36 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    .divider {
+        margin-top: 15px;
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .promo {
+        background-position-x: center;
+        &__buttons {
+            margin-top: 32px;
+        }
+    }
+    .about {
+        .divider {
+            margin-top: 15px;
+        }
+        &__wrapper {
+            grid-template-columns: 340px auto auto / 1fr;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 40px 5px 0;
+        }
+    }
+    .skills {
+        .title {
+            margin-top: 20px;
+        }
+        &__wrapper {
+            margin-top: 20px;
+        }
+        &__rating {
+            grid-template-columns: repeat(auto-fit, 300px);
+            &-item {
+                align-items: end;
+                row-gap: 20px;
+            }
+        }
+    }
+}
